@@ -21,13 +21,17 @@ public class QueueUsingTwoStacks {
             int action = scanner.nextInt();
 
             scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
-            if (action == 1) {
-                stackQueue.push(scanner.nextInt());
-                scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
-            } else if (action == 2) {
-                stackQueue.pop();
-            } else {
-                System.out.println(stackQueue.peek());
+            switch (action) {
+                case 1:
+                    stackQueue.push(scanner.nextInt());
+                    scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
+                    break;
+                case 2:
+                    stackQueue.pop();
+                    break;
+                default:
+                    System.out.println(stackQueue.peek());
+                    break;
             }
         }
     }
