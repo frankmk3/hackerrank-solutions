@@ -6,6 +6,10 @@ import java.util.*;
 import java.util.concurrent.*;
 import java.util.regex.*;
 
+/**
+ * Minimum Swaps 2
+ * https://www.hackerrank.com/challenges/minimum-swaps-2/problem
+ */
 public class MinimumSwaps2 {
 
     private static final Scanner scanner = new Scanner(System.in);
