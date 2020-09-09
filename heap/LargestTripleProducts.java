@@ -28,8 +28,8 @@ output = [-1, -1, 4, 4, 8]
 The 3rd element of output is 2*2*1 = 4, the 4th is 2*2*1 = 4, and the 5th is 2*2*2 = 8.
  */
 /*
-Add a orderd list to grap firts 3 elements and calculate the current max product
-if arr is less than 3 will terun -1
+Add a ordered list to grab first 3 elements and calculate the current max product
+if arr is less than 3 will return -1
 */
 
 class LargestTripleProducts {
@@ -45,8 +45,8 @@ class LargestTripleProducts {
 
     int[] findMaxProduct(int[] arr) {
         // Write your code here
-        //Java PriorityQueue is the oficial heap implementation but that implementations does not preserve the order.
-        //this approach keeps the top 3 biggest elements. this will redice the sorting time to be like O(1)
+        //Java PriorityQueue is the official heap implementation but that implementations does not preserve the order.
+        //this approach keeps the top 3 biggest elements. this will reduce the sorting time to be like O(1)
         List<Integer> sortedList = new ArrayList<>(4);
         int[] response = new int[arr.length];
         int position = 0;
